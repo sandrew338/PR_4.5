@@ -24,8 +24,7 @@ int main()
 	{
 		cout << "x = "; cin >> x;
 		cout << "y = "; cin >> y;
-		if ((y <= pow(R * R - pow(x + R, 2), 2) && y >= 0 && y <= R && x >= -R && x <= 0) || (y <= pow(R * R - pow(x - R, 2), 2) && y >= -R && y <= 0 && x >= 0 && x <= R))
-			cout << "yes" << endl;
+		if ((y * y <= R * R - pow(x + R, 2) && y >= 0 && y <= R && x >= -R && x <= 0) || (y * y <= R * R - pow(x - R, 2), 2) && y >= -R && y <= 0 && x >= 0 && x <= R)			cout << "yes" << endl;
 		else
 			cout << "no" << endl;
 		cin.get();
@@ -36,8 +35,7 @@ int main()
 		{
 			x = B * rand() / RAND_MAX - A ;
 			y = B * rand() / RAND_MAX - A;
-			if ((y <= pow(R * R - pow(x + R, 2), 2) && y >= 0 && y <= R && x >= -R && x <= 0) || (y <= pow(R * R - pow(x - R, 2), 2) && y >= -R && y <= 0 && x >= 0 && x <= R))
-				cout << setw(8) << setprecision(4) << x << " "
+			if ((y * y <= R * R - pow(x + R, 2) && y >= 0 && y <= R && x >= -R && x <= 0) || (y * y <= R * R - pow(x - R, 2), 2) && y >= -R && y <= 0 && x >= 0 && x <= R)				cout << setw(8) << setprecision(4) << x << " "
 				<< setw(8) << setprecision(4) << y << " " << "yes" << endl;
 			else
 				cout << setw(8) << setprecision(4) << x << " "
